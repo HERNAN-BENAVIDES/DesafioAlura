@@ -1,40 +1,40 @@
 <!DOCTYPE html>
 <html lang="es">
 
-
 <head>
   <meta charset="UTF-8">
   <title>Encriptador</title>
   <link rel="stylesheet" href="style.css">
 </head>
 
-
 <body>
 
-    <h1>Encriptador de Texto</h1>
+  <h1>Encriptador de Texto</h1>
 
-    <div class="contenedor">
-        <div class="caja">
-            <textarea id="cajaEntrada" placeholder="Escribe aquí..."></textarea>
-            <button class="boton1" onclick="encriptarTexto()">Encriptar</button>
-            <button class="boton1" onclick="desencriptarTexto()">Desencriptar</button>
-        </div>
-    
-        <div class="caja">
-            <textarea id="cajaSalida" readonly></textarea>
-            <span id="textoPie">Ingresa el texto que deseas encriptar o desencriptar</span>
-            <img id="imagenBuscar" src="img/buscar.png">
-            <button class="boton2" onclick="limpiarSalida()">
-                <img src="img/clear.png">
-            </button>
-            <button class="boton2" onclick="copiarTexto()">
-                <img src="img/copy.png">
-            </button>
-      
-        </div>
+  <div class="contenedor">
+    <div class="caja">
+      <textarea id="cajaEntrada" placeholder="Escribe aquí..."></textarea>
+      <button class="boton1" onclick="encriptarTexto()">Encriptar</button>
+      <button class="boton1" onclick="desencriptarTexto()">Desencriptar</button>
     </div>
 
-    <script src="app.js"></script>
+    <div class="caja">
+      <textarea id="cajaSalida" readonly></textarea>
+      <div class="contenedorInferior">
+        <span id="textoPie">Ingresa el texto que deseas encriptar o desencriptar</span>
+        <img id="imagenBuscar" src="img/buscar.png">
+      </div>
+      <button class="boton2" onclick="limpiarSalida()">
+        <img src="img/clear.png">
+      </button>
+      <button class="boton2" onclick="copiarTexto()">
+        <img src="img/copy.png">
+      </button>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
 
 </body>
+
 </html>

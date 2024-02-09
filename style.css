@@ -1,13 +1,13 @@
 body {
     font-family: Arial, sans-serif;
     margin: 20px;
- }
+}
   
 .contenedor {
     display: flex;
     justify-content: space-around;
 }
- 
+  
 textarea {
     width: 100%;
     height: 300px;
@@ -15,7 +15,7 @@ textarea {
     resize: none;
     text-align: left;
 }
-
+  
 .caja {
     position: relative;
     width: 100%;
@@ -24,7 +24,7 @@ textarea {
     margin-right: 10px;
     text-align: center;
 }
-
+  
 #cajaEntrada {
     text-align: left;
     margin-bottom: 10px;
@@ -34,22 +34,28 @@ textarea {
     margin-bottom: 10px;
     background-color: #f0f0f0;
 }
-
+  
+.contenedorInferior {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-40%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 10;
+}
+  
 #imagenBuscar {
     width: auto;
-    position: absolute;
-    max-height: calc(100% - 20px); /* Ajustar según el tamaño deseado */
-    transform: translateY(-200%);
-    display: block;
-    margin: auto;
+    max-height: 100px; 
+    margin-top: 10px;
 }
+  
 #textoPie {
-    position: absolute;
-    bottom: 5px;
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 14px; /* ajusta el tamaño del texto según lo necesites */
+    font-size: 14px;
 }
+  
 button {
     padding: 10px;
     background-color: #78bef8;
@@ -59,7 +65,7 @@ button {
     transition: all 0.5s;
     -webkit-transition: all 0.5s;
 }
-
+  
 button:hover {
     background-color: #6fc5ff;
     box-shadow: 0 0 20px #6fc5ff50;
@@ -73,16 +79,16 @@ button:active {
     box-shadow: none;
     transform: scale(0.98);
 }
-
+  
 .boton1 {
     width: 100px;
 }
-
+  
 .boton2 {
     border-radius: 100%;
 }
-
-img{
+  
+img {
     width: 35px;
 }
   
