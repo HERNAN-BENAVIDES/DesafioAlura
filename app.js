@@ -47,3 +47,9 @@ function ocultarImagenYTexto() {
         textoPie.style.display = 'inline';
     }
 }
+
+const cajaEntrada = document.getElementById('cajaEntrada');
+
+cajaEntrada.addEventListener('input', function() {
+    this.value = this.value.replace(/[^a-zA-Z0-9,.:;-\s]/g, '').toLowerCase();
+});
