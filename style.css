@@ -4,12 +4,30 @@ body {
     position: relative;
 }
 
-.contenedor {
+.contenedor1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.titulo {
+    flex: 1;
+}
+
+.logo {
+    margin-left: auto;
+}
+
+#logo{
+    width: max-content;
+}
+
+.contenedor2 {
     display: flex;
     justify-content: space-around;
 }
 
-.contenedor2 {
+.contenedor3 {
     position: absolute;
     bottom: -300px;
     left: 10px;
@@ -169,3 +187,24 @@ img {
     backdrop-filter: blur(4px);
 }
 
+@media only screen and (max-width: 768px) {
+    /* Estilos para dispositivos móviles */
+    .contenedor2 {
+        flex-direction: column;
+    }
+
+    .caja {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    textarea {
+        height: 150px;
+    }
+
+    .contenedor3 {
+        position: static;
+        margin-top: 20px;
+    }
+}
